@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phishlens"
+version = "1.0.0"
+description = "Explique pourquoi une URL ressemble à du phishing, hors ligne."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = ["Topic :: Security", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+phishlens = "phishlens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
